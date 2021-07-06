@@ -1,0 +1,18 @@
+------jenkins installation------
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+
+-------java installation-----
+
+sudo apt-get install openjdk-11-jdk
+
+
+-------tomcat download-------------
+wget https://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.66/bin/apache-tomcat-8.5.66.tar.gz
+
+to extract the tar.gz file
+tar –xvzf <file_name>.tar.gz
