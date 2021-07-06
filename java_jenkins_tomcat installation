@@ -16,3 +16,15 @@ wget https://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.66/bin/apache-tomcat-8
 
 to extract the tar.gz file
 tar –xvzf <file_name>.tar.gz
+
+
+----------tomcat role_name---------------
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+<user username="deployer" password="deployer" roles="manager-script"/>
+<user username="tomcat" password="tomcat123" roles="manager-gui"/>
+
+
